@@ -1,0 +1,14 @@
+.hashtag {
+  position: relative;
+  &:after {
+    content: "";
+    width: 10px;
+    height: 10px;
+    display: block;
+    position: absolute;
+    top: 0;
+    left: 0;
+    background-image: url("/images/hashtag.svg");
+    background-size: cover;
+  }
+}

@@ -4,7 +4,15 @@ module.exports = {
     "./components/**/*.{js,ts,jsx,tsx}",
   ],
   theme: {
-    extend: {},
+    extend: {
+      colors: {
+        primary: "#1DA1F2",
+        background: "#192730",
+      },
+      backgroundImage: {
+        hashtag: "url('/images/hashtag.svg')",
+      },
+    },
   },
   plugins: [],
 };
