@@ -1,5 +1,6 @@
-import React from "react";
+import styles from "../styles/components/Navbar.module.scss";
 
+import React from "react";
 import Image from "next/image";
 
 interface NavProps {
@@ -8,7 +9,7 @@ interface NavProps {
 
 const Navbar: React.FC<NavProps> = ({ username }) => {
   return (
-    <nav className="flex w-full h-24 items-center">
+    <nav className="flex w-full h-24 items-center gap-12">
       <div className="h-full flex items-center gap-6 ml-14 mr-auto">
         <Image
           src="/images/twitter.svg"
@@ -36,8 +37,35 @@ const Navbar: React.FC<NavProps> = ({ username }) => {
         />
       </div>
       <div
-        className="flex justify-between items-center h-[46px] gap-4 mr-14 bg-background leading-[48px]
-         text-white rounded-full cursor-pointer px-2"
+        className="flex items-center justify-evenly gap-2 bg-[#c5d6e4] rounded-full px-4 
+            h-[46px] cursor-pointer"
+      >
+        <Image
+          src="/images/home.svg"
+          width={30}
+          height={30}
+          className="scale-[80%] -translate-y-[1px]"
+        />
+        <span>Home</span>
+      </div>
+      <Image
+        src="/images/message.svg"
+        width={30}
+        height={30}
+        className="scale-90 cursor-pointer"
+      />
+      <div className={`${styles.notification} flex items-center`}>
+        <Image
+          src="/images/bell.svg"
+          width={30}
+          height={30}
+          className="cursor-pointer"
+        />
+      </div>
+      <span></span>
+      <div
+        className="flex justify-between items-center h-[46px] gap-4 mr-14 bg-background 
+        leading-[48px] text-[#e1ebf3] rounded-full cursor-pointer px-2"
       >
         <Image
           src="/images/avatar.png"

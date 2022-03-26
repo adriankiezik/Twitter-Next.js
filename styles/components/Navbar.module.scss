@@ -1,14 +1,16 @@
-.hashtag {
+.notification {
   position: relative;
-  &:after {
+  &::after {
     content: "";
-    width: 10px;
-    height: 10px;
     display: block;
     position: absolute;
-    top: 0;
-    left: 0;
-    background-image: url("/images/hashtag.svg");
-    background-size: cover;
+    top: -3px;
+    right: -2px;
+    width: 18px;
+    height: 18px;
+    border-radius: 50px;
+    background-color: red;
+    cursor: pointer;
+    border: 2px solid #03141c;
   }
 }
