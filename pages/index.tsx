@@ -12,7 +12,7 @@ const HomePage: NextPage = () => {
       <Head>
         <title>Home / Twitter</title>
       </Head>
-      <Navbar />
+      <Navbar username="Adrian Kiezik" />
     </React.Fragment>
   );
 };

@@ -2,10 +2,14 @@ import React from "react";
 
 import Image from "next/image";
 
-const Navbar: React.FC = () => {
+interface NavProps {
+  username: string;
+}
+
+const Navbar: React.FC<NavProps> = ({ username }) => {
   return (
-    <nav className="w-full h-24">
-      <div className="h-full flex items-center gap-6 ml-14">
+    <nav className="flex w-full h-24 items-center">
+      <div className="h-full flex items-center gap-6 ml-14 mr-auto">
         <Image
           src="/images/twitter.svg"
           width={45}
@@ -29,6 +33,24 @@ const Navbar: React.FC = () => {
           className="h-[46px] w-80 bg-background rounded-xl focus:outline-none 
             focus:outline-offset-0 focus:outline-1 focus:outline-primary pl-12 text-white 
             placeholder:text-[#a9a9a9] placeholder:text-[16px]"
+        />
+      </div>
+      <div
+        className="flex justify-between items-center h-[46px] gap-4 mr-14 bg-background leading-[48px]
+         text-white rounded-full cursor-pointer px-2"
+      >
+        <Image
+          src="/images/avatar.png"
+          width={35}
+          height={35}
+          className="rounded-full"
+        />
+        <span className="text-[15px] font-semibold">{username}</span>
+        <Image
+          src="/images/dropdown.svg"
+          width={40}
+          height={30}
+          className="scale-[40%] translate-y-[1px]"
         />
       </div>
     </nav>
