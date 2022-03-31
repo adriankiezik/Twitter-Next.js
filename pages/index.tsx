@@ -10,7 +10,7 @@ const HomePage: NextPage = () => {
   return (
     <React.Fragment>
       <Head>
-        <title>Home / Twitter</title>
+        <title>Home / Social Network</title>
       </Head>
       <Navbar username="Adrian Kiezik" />
     </React.Fragment>

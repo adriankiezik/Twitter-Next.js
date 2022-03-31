@@ -11,13 +11,7 @@ const Navbar: React.FC<NavProps> = ({ username }) => {
   return (
     <nav className="flex w-full h-24 items-center gap-12">
       <div className="h-full flex items-center gap-6 ml-14 mr-auto">
-        <Image
-          src="/images/twitter.svg"
-          width={45}
-          height={45}
-          className="cursor-pointer"
-        />
-        <div className="absolute left-[135px] top-[31px]">
+        <div className="absolute left-[67px] top-[31px]">
           <Image
             src="/images/hashtag.svg"
             width={35}
