@@ -12,6 +12,7 @@ const HomeButton = () => {
         width={30}
         height={30}
         className="scale-[80%]"
+        alt="Home"
       />
       <span className="translate-y-[1px] font-semibold">Home</span>
     </div>

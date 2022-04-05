@@ -16,6 +16,7 @@ const ProfileButton: React.FC<ProfileProps> = ({ username }) => {
         width={35}
         height={35}
         className="rounded-full"
+        alt="Avatar"
       />
       <span className="text-[15px] font-semibold">{username}</span>
       <Image
@@ -23,6 +24,7 @@ const ProfileButton: React.FC<ProfileProps> = ({ username }) => {
         width={40}
         height={30}
         className="scale-[40%] translate-y-[1px]"
+        alt="open menu"
       />
     </div>
   );

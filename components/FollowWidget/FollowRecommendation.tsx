@@ -1,6 +1,7 @@
 import React from "react";
 
 import Image from "next/image";
+import Link from "next/link";
 
 const FollowRecommendation: React.FC = () => {
   return (
@@ -10,6 +11,7 @@ const FollowRecommendation: React.FC = () => {
         width={50}
         height={50}
         className="rounded-full"
+        alt="Avatar"
       />
       <div className="h-full translate-y-1 w-36">
         <h1 className="font-semibold text-white text-ellipsis overflow-hidden whitespace-nowrap">
@@ -19,13 +21,14 @@ const FollowRecommendation: React.FC = () => {
           @someusertag
         </h3>
       </div>
-      <a
-        href="/"
-        className="text-black font-semibold bg-white rounded-full cursor-pointer px-4 py-2
+      <Link href="/">
+        <a
+          className="text-black font-semibold bg-white rounded-full cursor-pointer px-4 py-2
         text-sm"
-      >
-        Follow
-      </a>
+        >
+          Follow
+        </a>
+      </Link>
     </div>
   );
 };

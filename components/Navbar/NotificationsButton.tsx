@@ -11,6 +11,7 @@ const NotificationsButton = () => {
         width={30}
         height={30}
         className="cursor-pointer"
+        alt="Notifications"
       />
     </div>
   );

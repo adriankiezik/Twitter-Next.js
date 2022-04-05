@@ -1,5 +1,7 @@
 import React from "react";
 
+import Link from "next/link";
+
 import FollowRecommendation from "./FollowRecommendation";
 
 const FollowWidget: React.FC = () => {
@@ -10,7 +12,7 @@ const FollowWidget: React.FC = () => {
       <FollowRecommendation />
       <FollowRecommendation />
       <h3 className="text-primary pb-4">
-        <a href="/">Show more</a>
+        <Link href="/">Show more</Link>
       </h3>
     </div>
   );

@@ -8,6 +8,7 @@ const MessagesButton = () => {
       width={30}
       height={30}
       className="scale-90 cursor-pointer"
+      alt="Messages"
     />
   );
 };

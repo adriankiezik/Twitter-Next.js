@@ -11,6 +11,7 @@ const ProfileAvatar: React.FC = () => {
         height={100}
         objectPosition=""
         className="rounded-full"
+        alt="Avatar"
       />
     </div>
   );

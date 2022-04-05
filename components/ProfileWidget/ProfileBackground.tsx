@@ -10,6 +10,7 @@ const ProfileBackground: React.FC = () => {
       src="/images/background.jpg"
       width="100%"
       height="30px"
+      alt="Background Image"
     />
   );
 };

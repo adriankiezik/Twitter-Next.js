@@ -11,6 +11,7 @@ const SearchBar = () => {
             width={35}
             height={35}
             className="scale-[60%]"
+            alt="hashtag"
           />
         </div>
         <input
