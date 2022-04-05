@@ -7,7 +7,7 @@ import ProfileFollowers from "./ProfileFollowers";
 const ProfileWidget: React.FC = () => {
   return (
     <div
-      className="w-full rounded-3xl overflow-hidden bg-background text-center text-white 
+      className="w-full rounded-3xl overflow-hidden bg-background text-center text-white
     relative"
     >
       <ProfileBackground />
@@ -16,9 +16,9 @@ const ProfileWidget: React.FC = () => {
       <h3 className="mt-1 text-slate-400">@adriankiezik</h3>
       <p className="my-5 px-5">Some bio information here.</p>
       <ProfileFollowers />
-      <h2 className="text-primary m-5">
+      <h3 className="text-primary m-5">
         <a href="/">My Profile</a>
-      </h2>
+      </h3>
     </div>
   );
 };

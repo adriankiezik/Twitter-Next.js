@@ -19,7 +19,7 @@ const HomePage: NextPage = () => {
       </Head>
       <Navbar />
       <main className="grid w-full grid-cols-[350px_auto_350px] gap-5 px-14">
-        <div className="min-h-screen">
+        <div className=" h-fit sticky top-24">
           <ProfileWidget />
           <FollowWidget />
         </div>

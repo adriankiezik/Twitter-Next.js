@@ -8,7 +8,7 @@ import ProfileButton from "./ProfileButton";
 
 const Navbar: React.FC = () => {
   return (
-    <nav className="flex w-full h-24 items-center gap-12">
+    <nav className="flex w-full h-24 items-center gap-12 sticky top-0 z-10 bg-[#03141c]">
       <SearchBar />
       <HomeButton />
       <MessagesButton />
